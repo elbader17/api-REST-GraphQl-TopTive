@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tla": {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "areaName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "competitions": {
+      "collection": "competition",
+      "via": "teams"
+    },
+    "players": {
+      "collection": "player",
+      "via": "team"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "Player"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "string"
+    },
+    "countryOfBirth": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "team": {
+      "via": "players",
+      "model": "team"
+    }
+  }
+}
