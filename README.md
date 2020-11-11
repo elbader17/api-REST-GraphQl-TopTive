@@ -3,8 +3,8 @@
 
 To run the project you need to have [docker](https://docs.docker.com/engine/install/ubuntu/) and [docker-compose](https://docs.docker.com/compose/install/) previously installed
 
-1. `git clone https://github.com/elbader17/topTive.git`
-2. `cd topTive`
+1. `git clone https://github.com/elbader17/api-REST-GraphQl-TopTive.git`
+2. `cd api-REST-GraphQl-TopTive`
 3. `docker-compose pull`
 4. `docker-compose up -d`
 5. `sudo docker-compose logs --tail=all -f | grep strapi`
